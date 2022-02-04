@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after{
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+header{
+    width: 80vw;
+    height: 10vh;
+    background-color: red;
+    float: right;
+    
+}
+main{
+    width: 80vw;
+    height: calc(100vh - 10vh);
+    background-color: blue;
+    float: right;
+}
+nav{
+    width: 20vw;
+    height: 100vh;
+    background-color: black;
+    
+}
