@@ -9,14 +9,39 @@
     display: table; 
     clear: both;
 }
-
+.flex{
+    display: flex;
+}
 header{
     width: 85vw;
     height: 10vh;
-    background-color: red;
+    background-color: black;
     float: right;
+    position: relative;
+}
+.btn-upgrade{
+    position: absolute;
+    top:15px;
+    right: 0;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
     
 }
+.logo-spotify{
+    width: 50px;
+    margin: 10px;
+    
+    
+}
+.nav-bar h1{
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 2rem;
+}
+
 main{
     width: 85vw;
     height: calc((100vh - 10vh) - 10vh);
@@ -27,7 +52,6 @@ nav{
     width: 15vw;
     height: calc(100vh - 10vh);
     background-color: rgb(23, 143, 63);
-    
 }
 footer{
     width: 100vw;
