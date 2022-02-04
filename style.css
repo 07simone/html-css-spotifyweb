@@ -19,19 +19,19 @@ header{
 }
 main{
     width: 85vw;
-    height: calc((100vh - 10vh) - 5vh);
+    height: calc((100vh - 10vh) - 10vh);
     background-color: blue;
     float: right;
 }
 nav{
     width: 15vw;
-    height: calc(100vh - 5vh);
+    height: calc(100vh - 10vh);
     background-color: rgb(23, 143, 63);
     
 }
 footer{
     width: 100vw;
-    height: 5vh;
+    height: 10vh;
     background-color: grey;
 }
 /* small */
@@ -41,27 +41,65 @@ footer{
     margin: 0;
     padding: 0;
 }
-header, main, footer{
-    width: 100vw;
+header, main{
+    width:  calc(100vw - 60px);
 }
 nav{
-    width:100vw;
+    width:60px;
+}
+footer{
+    width: 100vw;
 }
 }
-/* medium */
-/* @media screen and (min-width:577px) and (max-width:768px){
-    header, main, footer{
-        width: 100vw;
+ /* /* medium  */
+ @media screen and (min-width:577px) and (max-width:768px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header, main{
+        width: calc(100vw - 200px);
     }
     nav{
-        width: 15vw;
+        width: 200px;
     }
-} */
-/* /* large */
-/* @media screen and (min-width:769px) and (max-width:992px){
-    
-}
+    footer{
+        width: 100vw;
+    }
+}  
+ /* large */
+ @media screen and (min-width:769px) and (max-width:992px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header, main{
+        width: calc(100vw - 200px);
+    }
+    nav{
+        width: 200px;
+    }
+    footer{
+        width: 100vw;
+    }
+} 
+
 /* extra-large */
-/* @media screen and (min-width:993px) and (max-width:1400px){
-    
-} */ 
+ @media screen and (min-width:993px) and (max-width:1500px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    header, main{
+        width: calc(100vw - 200px);
+    }
+    nav{
+        width: 200px;
+    }
+    footer{
+        width: 100vw;
+    }
+} 
