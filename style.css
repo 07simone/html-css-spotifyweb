@@ -17,6 +17,9 @@ main{
     background-color: blue;
     
 }
+ main#main-navbar{
+    background-color: black;
+}
 .col-left{
     width: 220px;
     background-color: darkgoldenrod;
@@ -43,17 +46,21 @@ main{
 .nav-logo{
     height: 80px;
     background-color: chartreuse;
+    display: flex;
  }
 .nav-menu{
     height: 120px;
     background-color: hotpink;
+    
  }
 .nav-playlist{
     height: 280px;
-    background-color: olive;
+    background-color: black;
 }
-
-/* .btn-upgrade{
+.flex{
+    display: flex;
+}
+.btn-upgrade{
     position: absolute;
     top:15px;
     right: 0;
@@ -63,18 +70,91 @@ main{
     color: white;
     text-decoration: none;
     
-} */
-/* .logo-spotify{
+}
+.nav-logo img{
     width: 50px;
-    margin: 10px;
     
-    
-} */
+}
 
+.nav-menu img {
+    width: 35px;
+}
+
+.opzione {
+    align-items: center;
+}
+
+ .nav-menu h4 {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+ #sito{
+     align-self: center;
+     font-size: 1.7rem;
+ }
+ .fa-plus{
+     background-color: rgb(83, 83, 83);
+     padding: 1rem;
+     
+ }
+ .new-list h4{
+     display: inline-block;
+     color: grey;
+ }
+ .new-list h3{
+     color: white;
+ }
+ .lista-playlist ul li{
+     color: grey;
+     line-height:30px;
+ }
+ .download img {
+     width: 25px;
+ }
+ .download, h4{
+     align-items: center;
+     color: gray;
+ }
+hr{
+    width: 85%;
+    margin: 0 auto;
+}
+
+ .autore,h3{
+    align-items: center;
+    color: white;
+} 
+.autore img{
+    width: 25px;
+    border-radius: 50%;
+    background-color:gray;
+}
+
+.lista-generi{
+    justify-content: center;
+    list-style-type: none;
+}
+.lista-generi li{
+    margin: 10px;
+}
+.left-footer{
+    align-items: center;
+    
+}
 
 footer{
+display: flex;
+align-items: center;
 height: 90px;
 background-color: brown;
+}
+ .immagine-song img{
+    width: 50px;
+}
+.name-song, h5, h6{
+    vertical-align: middle;
+    
 }
 
 
