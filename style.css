@@ -9,17 +9,51 @@
     display: table; 
     clear: both;
 }
-.flex{
+main{
+    display:flex;
+}
+main{
+    height: calc(100vh - 90px);
+    background-color: blue;
+    
+}
+.col-left{
+    width: 220px;
+    background-color: darkgoldenrod;
+}
+.col-right{
+    width: calc(100% - 220px);
+    background-color: rgb(184, 11, 170);
+    }
+ main div#call-top{
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    height: 80px;
+}
+.top-nav{
+    background-color: darkred;
+    height: calc(100% - 65px);
     display: flex;
+    flex-direction: column;
 }
-header{
-    width: 85vw;
-    height: 10vh;
-    background-color: black;
-    float: right;
-    position: relative;
+.bottom-nav{
+    background-color: deepskyblue;
+    height: 65px;
 }
-.btn-upgrade{
+.nav-logo{
+    height: 80px;
+    background-color: chartreuse;
+ }
+.nav-menu{
+    height: 120px;
+    background-color: hotpink;
+ }
+.nav-playlist{
+    height: 280px;
+    background-color: olive;
+}
+
+/* .btn-upgrade{
     position: absolute;
     top:15px;
     right: 0;
@@ -29,37 +63,23 @@ header{
     color: white;
     text-decoration: none;
     
-}
-.logo-spotify{
+} */
+/* .logo-spotify{
     width: 50px;
     margin: 10px;
     
     
-}
-.nav-bar h1{
-   
-    align-self: center;
-    font-size: 2rem;
+} */
+
+
+footer{
+height: 90px;
+background-color: brown;
 }
 
-main{
-    width: 85vw;
-    height: calc((100vh - 10vh) - 10vh);
-    background-color: blue;
-    float: right;
-}
-nav{
-    width: 15vw;
-    height: calc(100vh - 10vh);
-    background-color: rgb(23, 143, 63);
-}
-footer{
-    width: 100vw;
-    height: 10vh;
-    background-color: grey;
-}
+
 /* small */
-@media screen and (max-width:576px){
+/* @media screen and (max-width:576px){
 *{
     box-sizing: border-box;
     margin: 0;
@@ -74,9 +94,9 @@ nav{
 footer{
     width: 100vw;
 }
-}
+} */
  /* /* medium  */
- @media screen and (min-width:577px) and (max-width:768px){
+ /* @media screen and (min-width:577px) and (max-width:768px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -91,9 +111,9 @@ footer{
     footer{
         width: 100vw;
     }
-}  
+}   */
  /* large */
- @media screen and (min-width:769px) and (max-width:992px){
+ /* @media screen and (min-width:769px) and (max-width:992px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -108,10 +128,10 @@ footer{
     footer{
         width: 100vw;
     }
-} 
+}  */
 
 /* extra-large */
- @media screen and (min-width:993px) and (max-width:1500px){
+ /* @media screen and (min-width:993px) and (max-width:1500px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -126,4 +146,4 @@ footer{
     footer{
         width: 100vw;
     }
-} 
+}  */
