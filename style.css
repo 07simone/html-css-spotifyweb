@@ -14,8 +14,6 @@ main{
 }
 main{
     height: calc(100vh - 90px);
-    
-    
 }
  #main-navbar{
     background-color: black;
@@ -72,6 +70,10 @@ main{
     text-decoration: none;
     
 }
+.btn-upgrade:hover{
+    transform: scale(1.2);
+}
+
 .nav-logo img{
     width: 50px;
     
@@ -86,16 +88,10 @@ main{
  .nav-menu .opzione {
     align-items: center;
 }
-
-
-
  .nav-menu h4 {
     font-size: 0.8rem;
     color: grey;
 }
-
-
-
  #sito{
      align-self: center;
      font-size: 1.7rem;
@@ -105,6 +101,10 @@ main{
      background-color: rgb(83, 83, 83);
      padding: 1rem;
      
+ } 
+ .opzione h4:hover{
+    color: white;
+    cursor: pointer; 
  }
  .new-list h4{
      display: inline-block;
@@ -117,6 +117,10 @@ main{
      color: grey;
      line-height:30px;
  }
+ .lista-playlist li:hover{
+    border-left: 2px solid yellow;
+    cursor: pointer; 
+}
  .download img {
      width: 25px;
  }
@@ -138,29 +142,46 @@ hr{
     border-radius: 50%;
     background-color:gray;
 }
-/* .top-menu{
-    justify-content: space-evenly;
+
+.album{
+    width: calc((100% / 6) - 10px);
+    margin-right: 10px;
+}
+.album-container{
+    flex-wrap: wrap;
+}
+/* .album-container .pictures:hover{
+    
 } */
-
-
+  section.name-songs{
+    text-align: center;
+} 
 .top-menu, .center-menu, .bottom-menu #last-listen{
     color: white;
+    
 }
-.album .circle {
+.circle {
     border-radius: 50%;
-    width: 200px;
+    width: 100%;
 }
-.pictures{
-    width: 200px;
-}
+ .pictures{
+    width: 100%;
+} 
 .lista-generi{
     justify-content: center;
     list-style-type: none;
+    flex-wrap: wrap;
     color: gray;
 }
 .lista-generi li{
     margin: 10px;
+    
 }
+.lista-generi li:hover{
+    border-bottom: 2px solid yellow;
+    cursor: pointer; 
+}
+
 footer{
     display: flex;
     align-items: center;
@@ -217,7 +238,7 @@ section.player-controller i{
  .imm-song img{
     width: 50px;
 }
- .name-song{
+ .name-song {
      align-items: center;
  }
  
@@ -233,56 +254,57 @@ section.player-controller i{
 
 
 /* small */
-/*  @media screen and (max-width:576px){
+ @media screen and (max-width:576px){
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-header, main{
-    width:  calc(100vw - 60px);
+.album{
+    width:  calc(100% / 3);
 }
-nav{
-    width:60px;
+/* .main-song{
+    width: calc(100% / 4);
+} */
+
+
+#main-navbar{
+    width: 60px;
 }
 footer{
-    width: 100vw;
+    width: 100%;
 }
-}  */
+}  
  /* /* medium  */
- /* @media screen and (min-width:577px) and (max-width:768px){
+   @media screen and (min-width:577px) and (max-width:768px){
     *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
-    header, main{
-        width: calc(100vw - 200px);
+     .album{
+        width: calc(100% / 5);
     }
-    nav{
-        width: 200px;
-    }
+    
     footer{
-        width: 100vw;
+        width: 100%;
     }
-}   */
+}     
  /* large */
- /* @media screen and (min-width:769px) and (max-width:992px){
+  /*  @media screen and (min-width:769px) and (max-width:992px){
     *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
-    header, main{
-        width: calc(100vw - 200px);
+    .album-container{
+        width: 100%;
     }
-    nav{
-        width: 200px;
-    }
+    
     footer{
-        width: 100vw;
+        width: 100%;
     }
-}  */
+}  */  
 
 /* extra-large */
  /* @media screen and (min-width:993px) and (max-width:1500px){
