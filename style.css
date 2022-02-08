@@ -14,19 +14,19 @@ main{
 }
 main{
     height: calc(100vh - 90px);
-    background-color: blue;
+    
     
 }
- main#main-navbar{
+ #main-navbar{
     background-color: black;
 }
 .col-left{
     width: 220px;
-    background-color: darkgoldenrod;
+    /* background-color: darkgoldenrod; */
 }
 .col-right{
     width: calc(100% - 220px);
-    background-color: rgb(184, 11, 170);
+    background-color: rgb(0, 0, 7);
     }
  main div#call-top{
     width: 100%;
@@ -34,23 +34,23 @@ main{
     height: 80px;
 }
 .top-nav{
-    background-color: darkred;
+   /*  background-color: darkred; */
     height: calc(100% - 65px);
     display: flex;
     flex-direction: column;
 }
 .bottom-nav{
-    background-color: deepskyblue;
+    /* background-color: deepskyblue; */
     height: 65px;
 }
 .nav-logo{
     height: 80px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
     display: flex;
  }
 .nav-menu{
     height: 120px;
-    background-color: hotpink;
+   /*  background-color: hotpink; */
     
  }
 .nav-playlist{
@@ -75,25 +75,32 @@ main{
     width: 50px;
     
 }
-
+ .first-selection .title{
+    text-align: center;
+}
 .nav-menu img {
     width: 35px;
 }
 
-.opzione {
+ .nav-menu .opzione {
     align-items: center;
 }
+
+
 
  .nav-menu h4 {
     font-size: 0.8rem;
     color: grey;
 }
 
+
+
  #sito{
      align-self: center;
      font-size: 1.7rem;
+     color: white;
  }
- .fa-plus{
+  .new-list .fa-plus{
      background-color: rgb(83, 83, 83);
      padding: 1rem;
      
@@ -130,32 +137,43 @@ hr{
     border-radius: 50%;
     background-color:gray;
 }
+/* .top-menu{
+    justify-content: space-evenly;
+} */
+.album{
+    width: 300px;
+}
+.name-song{
+    text-align: center;
+}
+.top-menu #last-listen{
+    color: white;
+}
 
 .lista-generi{
     justify-content: center;
     list-style-type: none;
+    color: gray;
 }
 .lista-generi li{
     margin: 10px;
 }
 .left-footer{
     align-items: center;
-    
+    justify-content: space-evenly;
 }
 
 footer{
-display: flex;
-align-items: center;
-height: 90px;
-background-color: brown;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    height: 90px;
+    background-color: brown;
 }
  .immagine-song img{
     width: 50px;
 }
-.name-song, h5, h6{
-    vertical-align: middle;
-    
-}
+ 
 
 
 /* small */
