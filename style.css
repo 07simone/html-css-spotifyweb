@@ -17,6 +17,7 @@ main{
 }
  #main-navbar{
     background-color: black;
+    padding-left: 1.5rem;
 }
 .col-left{
     width: 220px;
@@ -26,6 +27,7 @@ main{
     width: calc(100% - 220px);
     background-color: rgb(0, 0, 7);
     overflow: auto;
+    
     }
  main div#call-top{
     width: 100%;
@@ -116,6 +118,7 @@ main{
  .lista-playlist ul li{
      color: grey;
      line-height:30px;
+     list-style-type: none;
  }
  .lista-playlist li:hover{
     border-left: 2px solid yellow;
@@ -144,14 +147,24 @@ hr{
 }
 
 .album{
-    width: calc((100% / 6) - 10px);
-    margin-right: 10px;
+    width: calc(94% / 6) ;
+    margin: .5%;
+    font-size: 0.75rem;
+    align-items: center;
 }
 .album-container{
     flex-wrap: wrap;
 }
 /* .album-container .pictures:hover{
     
+} */
+
+/*  .fa-circle-play{
+    display: none;
+}
+.fa-circle-play:hover{
+    display: inline;
+    z-index: 1;
 } */
   section.name-songs{
     text-align: center;
@@ -186,20 +199,24 @@ footer{
     display: flex;
     align-items: center;
     height: 90px;
-    background-color: brown;
+    background-color: rgb(40, 40, 40)
 } 
 
 footer#player {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-footer#player section.player-album{
     display: flex;
-    flex-basis: 10%;
-    
+    justify-content: space-between;
+    align-items: center;
 }
-
+footer#player section.player-album {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-evenly;
+}
+footer#player section.player-fader{
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-evenly;
+}
 section.player-album, .fa-heart, .fa-folder{
     align-items: center;
 }
@@ -209,8 +226,16 @@ footer#player section.player-controller{
     flex-basis: 40%;
     text-align: center;
     
-  
+
 }
+/* footer#player section.player-fader{
+    
+    flex-basis: 15%;
+    text-align: center;
+    
+
+}
+ */
 
 footer#player .player-bar-wrapper{
     display: flex;
@@ -218,13 +243,26 @@ footer#player .player-bar-wrapper{
     align-items: center;
     
 } 
+footer#player .volume{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 footer#player .player-bar{
     width: 60%;
     height: 5px;
     background-color: gray;
     border-radius: 5px;
 }
-.music-time{
+footer#player .player-2{
+    width: 30%;
+    height: 5px;
+    background-color: gray;
+    border-radius: 5px;
+    
+}
+.music-time, .music-time2{
     width: 20%;
     height: 100%;
     border-radius: 5px;
@@ -238,60 +276,52 @@ section.player-controller i{
  .imm-song img{
     width: 50px;
 }
- .name-song {
-     align-items: center;
- }
- 
 
-/* .name-song h5 h6{
-    vertical-align: middle;
-
-}
- .immagine-song img{
-    width: 50px;
-}  */
- 
 
 
 /* small */
- @media screen and (max-width:576px){
+  @media screen and (max-width:576px){
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .album{
-    width:  calc(100% / 3);
+    width: calc(94% / 2);
+    margin: .5%;
+    font-size: 0.4rem;
+     
 }
-/* .main-song{
-    width: calc(100% / 4);
-} */
-
+ .nav-playlist, .nav-logo h1, .download h4, .autore h3, hr, .nav-menu h4{
+    display: none;
+}
 
 #main-navbar{
     width: 60px;
-}
-footer{
+} 
+/* footer{
     width: 100%;
-}
-}  
+} */
+}   
  /* /* medium  */
-   @media screen and (min-width:577px) and (max-width:768px){
+   @media screen and (min-width:577px) and  (max-width:768px){
     *{
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
      .album{
-        width: calc(100% / 5);
+        width: calc(94% / 4);
+        font-size: 0.5rem;
+        
     }
     
-    footer{
+    /* footer{
         width: 100%;
-    }
+    } */
 }     
  /* large */
-  /*  @media screen and (min-width:769px) and (max-width:992px){
+    /* @media screen and (min-width:769px) and (max-width:992px){
     *{
         box-sizing: border-box;
         margin: 0;
@@ -303,8 +333,8 @@ footer{
     
     footer{
         width: 100%;
-    }
-}  */  
+    } */
+ 
 
 /* extra-large */
  /* @media screen and (min-width:993px) and (max-width:1500px){
