@@ -17,7 +17,7 @@ main{
 }
  #main-navbar{
     background-color: black;
-    padding-left: 1.5rem;
+   
 }
 .col-left{
     width: 220px;
@@ -35,28 +35,29 @@ main{
     height: 80px;
 }
 .top-nav{
-   /*  background-color: darkred; */
+   
     height: calc(100% - 65px);
     display: flex;
     flex-direction: column;
 }
 .bottom-nav{
-    /* background-color: deepskyblue; */
+    
     height: 65px;
 }
 .nav-logo{
     height: 80px;
-    /* background-color: chartreuse; */
+    
     display: flex;
  }
 .nav-menu{
     height: 120px;
-   /*  background-color: hotpink; */
+   
     
  }
 .nav-playlist{
     height: 280px;
     background-color: black;
+    overflow: auto;
 }
 .flex{
     display: flex;
@@ -70,6 +71,7 @@ main{
     padding: 10px;
     color: white;
     text-decoration: none;
+    z-index: 1;
     
 }
 .btn-upgrade:hover{
@@ -86,7 +88,10 @@ main{
 .nav-menu img {
     width: 35px;
 }
-
+.opzione:hover {
+    border-left: 2px solid yellow;
+    cursor: pointer; 
+}
  .nav-menu .opzione {
     align-items: center;
 }
@@ -123,6 +128,7 @@ main{
  .lista-playlist li:hover{
     border-left: 2px solid yellow;
     cursor: pointer; 
+    color: white;
 }
  .download img {
      width: 25px;
@@ -130,6 +136,7 @@ main{
  .download, h4{
      align-items: center;
      color: gray;
+     margin-bottom: 1px solid grey;
  }
 hr{
     width: 85%;
@@ -156,11 +163,11 @@ hr{
     flex-wrap: wrap;
     
 }
- .album-container .img:hover{
+ /* .album-container .img:hover{
     background-color: rgba(0, 0, 0, .4);
-} 
+}  */
   .play-hover{
-    position: relative;
+   position: relative; 
  } 
   .play-hover > i{
     display: none;
@@ -170,11 +177,17 @@ hr{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(50%, - 50%);
+    transform: translate(50%, - 50%); 
     display: inline;
     z-index: 1;
-    
+    transform:scale(7);
+    cursor: pointer; 
+    /* background-color:rgba(0, 0, 0, .4); */
 } 
+.play-hover .pictures .img:hover{
+    background-color:rgba(0, 0, 0, .4);
+}
+
 
   section.name-songs{
     text-align: center;
@@ -192,7 +205,7 @@ hr{
     
 } 
 .play-hover i{
-    width: 100%;
+   
     color: white;
 }
 .lista-generi{
@@ -286,7 +299,7 @@ footer#player .player{
     height: 5px;
     background-color: gray;
     border-radius: 5px;
-    
+    margin-right: 3rem;
 }
 .music-time, .music-time2 {
     width: 25%;
@@ -315,7 +328,7 @@ section.player-controller i{
     .album{
         width: calc(94% / 2);
         margin: .5%;
-        font-size: 0.4rem;
+        font-size: 0.7rem;
         
     }
     .col-right{
@@ -327,7 +340,7 @@ section.player-controller i{
 #call-top .btn-upgrade{
     
     text-align: center;
-    margin-right: 200px;
+    z-index: 1;
 }
     #main-navbar{
         width: 60px;
